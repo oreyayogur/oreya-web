@@ -1,0 +1,1561 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+
+    background-image: url('images/fondo-campo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+[id]
+{
+    scroll-margin-top: 100px;
+}
+
+p
+{
+    font-size: 15px;
+
+    color: #706f6f;
+}
+
+h1
+{
+    font-size: 50px;
+    font-weight: 600;
+
+    color: #efb814;
+}
+
+h2
+{
+    font-size: 40px;
+    font-weight: 600;
+
+    color: #68773c;
+}
+
+h3
+{
+    font-size: 30px;
+}
+
+h4
+{
+    font-size: 25px;
+}
+
+h5
+{
+    font-size: 20px;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar
+{
+    z-index: 1030;
+}
+
+.navbar-brand img
+{
+    display: block;
+
+    width: 150px;
+    height: auto;
+}
+
+
+/* ========================================
+   ENLACES DEL MENÚ
+======================================== */
+
+.navbar-nav .nav-link
+{
+    font-weight: 500;
+
+    transition:
+        color .3s ease,
+        font-weight .3s ease;
+
+    color: #706f6f;
+}
+
+.navbar-nav .nav-link:hover
+{
+    font-weight: 600;
+
+    color: #68773c;
+}
+
+
+/* ========================================
+   ENLACE ACTIVO
+======================================== */
+
+.navbar-nav .nav-link.active
+{
+    font-weight: 600;
+
+    color: #efb814 !important;
+}
+
+.navbar-nav .nav-link.active:hover
+{
+    color: #efb814 !important;
+}
+
+
+/* ========================================
+   HAMBURGUESA
+======================================== */
+
+.navbar-toggler
+{
+    padding: 8px 10px;
+
+    border: 2px solid #68773c;
+    border-radius: 6px;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active
+{
+    border-color: #efb814;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon
+{
+    width: 20px;
+    height: 20px;
+
+    background-image: url('images/hamburguesa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/* ========================================
+   ESPACIO NAVBAR
+======================================== */
+
+.espacio-arriba
+{
+    padding-top: 78px;
+}
+
+
+/* ========================================
+   WHATSAPP
+======================================== */
+
+.whatsapp-float
+{
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 120px;
+    height: 160px;
+    padding: 15px 10px;
+
+    transition: .3s;
+    transform: translateY(-50%);
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    border-radius: 25px 0 0 25px;
+    background-color: #efb814;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.whatsapp-float span
+{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.whatsapp-float i
+{
+    font-size: 55px;
+}
+
+.whatsapp-float:hover
+{
+    width: 130px;
+
+    color: white;
+    background-color: #68773c;
+}
+
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.slide
+{
+    display: flex;
+
+    width: 100%;
+    min-height: 500px;
+
+    background: #f9f6ef;
+
+    align-items: center;
+}
+
+.slide-image
+{
+    width: 60%;
+    height: 690px;
+}
+
+.slide-image img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slide-content
+{
+    width: 40%;
+    padding: 50px;
+}
+
+.slide-tag
+{
+    font-size: 20px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #68773c;
+}
+
+
+/* ========================================
+   TEXTO SLIDER
+======================================== */
+
+.espacio-arriba h1
+{
+    font-size: 50px;
+
+    margin: 0;
+
+    color: #68773c;
+}
+
+.espacio-arriba h2
+{
+    font-size: 55px;
+
+    margin: 0;
+
+    color: #efb814;
+}
+
+.espacio-arriba p
+{
+    font-size: 20px;
+    font-weight: 600;
+
+    margin: 0;
+
+    color: #706f6f;
+}
+
+.espacio-arriba .descripcion p
+{
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-top: 50px;
+}
+
+
+/* ========================================
+   FLECHAS SLIDER
+======================================== */
+
+.slider-arrow
+{
+    font-size: 50px;
+    line-height: 1;
+
+    display: flex;
+
+    width: 60px;
+    height: 60px;
+
+    color: #efb814;
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.slide-btn
+{
+    font-weight: 600;
+
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    transition: .3s;
+    text-decoration: none;
+
+    color: white;
+    border-radius: 30px;
+    background-color: #68773c;
+}
+
+.slide-btn:hover
+{
+    color: white;
+    background-color: #efb814;
+}
+
+.boton-arriba
+{
+    padding-top: 30px;
+}
+
+
+/* ========================================
+   PRODUCTOS
+======================================== */
+
+.productos h2
+{
+    margin: 0;
+}
+
+.productos h3
+{
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #68773c;
+}
+
+/* ========================================
+   PRESENTACIONES
+======================================== */
+
+.presentaciones h4
+{
+    margin: 0;
+}
+
+.presentaciones h4
+{
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #68773c;
+}
+
+
+/* ========================================
+   TARJETAS PRODUCTOS
+======================================== */
+
+.producto-card,
+.producto-card-1,
+.producto-card-2
+{
+    overflow: hidden;
+
+    padding: 0 25px;
+
+    transition: .3s;
+
+    border: none;
+    border-radius: 20px;
+}
+
+.producto-card
+{
+    background: #f9f6ef;
+
+    mix-blend-mode: multiply;
+}
+
+.producto-card-1
+{
+    background: #efb814;
+
+    mix-blend-mode: multiply;
+}
+
+.producto-card-2
+{
+    background: #68773c;
+
+    mix-blend-mode: multiply;
+}
+
+.producto-card:hover,
+.producto-card-1:hover,
+.producto-card-2:hover
+{
+    transform: translateY(-8px);
+}
+
+
+/* ========================================
+   TÍTULOS PRODUCTOS
+======================================== */
+
+.producto-card h3
+{
+    font-size: 25px;
+    font-weight: 600;
+
+    margin: 0;
+
+    color: #68773c;
+}
+
+
+/* ========================================
+   IMÁGENES PRODUCTOS
+======================================== */
+
+.producto-card img
+{
+    display: block;
+
+    width: 100px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+}
+
+.producto-card .boton-arriba
+{
+    padding-top: 15px;
+}
+
+
+/* ========================================
+   TARJETA DESCRIPTIVA
+======================================== */
+
+.producto-card-1 h5
+{
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    color: white;
+}
+
+.producto-card-1 p
+{
+    color: white;
+}
+
+
+/* ========================================
+   CARACTERÍSTICAS
+======================================== */
+
+.card-body
+{
+    padding: 0;
+}
+
+.card-body img
+{
+    width: 60%;
+}
+
+.card-body p
+{
+    font-size: 10px;
+    font-weight: 600;
+
+    color: white;
+}
+
+
+/* ========================================
+   ARTE
+======================================== */
+
+.arte
+{
+    height: 415px;
+
+    background-color: #68773c;
+
+    mix-blend-mode: multiply;
+}
+
+.arte h2
+{
+    color: white;
+}
+
+.arte-2
+{
+    margin-top: -280px;
+}
+
+
+/* ========================================
+   TARJETAS ARTE
+======================================== */
+
+.arte-card
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 480px;
+    padding: 0 25px;
+
+    cursor: pointer;
+
+    transition:
+        transform .4s ease,
+        background-color .4s ease;
+
+    border: none;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ========================================
+   FONDOS DE LAS TARJETAS
+======================================== */
+
+.arte-card-1
+{
+    background-image: url('images/vacas.jpg');
+}
+
+.arte-card-2
+{
+    background-image: url('images/leche.jpg');
+}
+
+.arte-card-3
+{
+    background-image: url('images/fresas-tierras.jpg');
+}
+
+.arte-card-4
+{
+    background-image: url('images/crema.jpg');
+}
+
+
+/* ========================================
+   CONTENIDO ORIGINAL
+======================================== */
+
+.arte-contenido
+{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ========================================
+   ICONOS ARTE
+======================================== */
+
+.arte-contenido img
+{
+    display: block;
+
+    width: 70px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+}
+
+
+/* ========================================
+   TÍTULOS ARTE
+======================================== */
+
+.arte-contenido h3
+{
+    font-size: 19px;
+    font-weight: 400;
+
+    margin: 0;
+
+    color: white;
+}
+
+
+/* ========================================
+   BOTONES ARTE
+======================================== */
+
+.arte-contenido .boton-arriba-1
+{
+    padding-top: 30px;
+}
+
+
+/* ========================================
+   INFORMACIÓN HOVER
+======================================== */
+
+.arte-hover
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    padding: 45px 30px;
+
+    transition:
+        opacity .4s ease,
+        visibility .4s ease;
+
+    text-align: center;
+
+    opacity: 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ========================================
+   TÍTULO INFORMACIÓN
+======================================== */
+
+.arte-hover h3
+{
+    font-size: 22px;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+
+    color: #68773c;
+}
+
+
+/* ========================================
+   TEXTO INFORMACIÓN
+======================================== */
+
+.arte-hover p
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    max-width: 280px;
+    margin: 0;
+
+    color: #706f6f;
+}
+
+
+/* ========================================
+   HOVER DESKTOP
+======================================== */
+
+@media (min-width: 769px)
+{
+    .arte-card:hover
+    {
+        transform: translateY(-8px);
+
+        background-color: #f9f6ef;
+        background-image: none !important;
+    }
+
+    .arte-card:hover p
+    {
+        color: #706f6f;
+    }
+
+    .arte-card:hover h3
+    {
+        font-weight: 600;
+
+        color: #68773c;
+    }
+
+    .arte-card:hover .arte-contenido
+    {
+        transform: scale(.95);
+
+        opacity: 0;
+    }
+
+    .arte-card:hover .arte-hover
+    {
+        visibility: visible;
+
+        opacity: 1;
+    }
+}
+
+
+/* ========================================
+   HISTORIA
+======================================== */
+
+.nuestra-card
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 500px;
+    padding: 0 25px;
+
+    transition: transform .4s ease;
+
+    border: none;
+    border-radius: 20px;
+    background: #f9f6ef;
+
+    mix-blend-mode: multiply;
+}
+
+
+/* ========================================
+   CONTENIDO ORIGINAL HISTORIA
+======================================== */
+
+.historia-portada
+{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 500px;
+
+    transition:
+        opacity .4s ease,
+        transform .4s ease;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.historia-portada img
+{
+    display: block;
+
+    width: 50%;
+    max-width: 100%;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ========================================
+   INFORMACIÓN HOVER HISTORIA
+======================================== */
+
+.historia-hover
+{
+    position: absolute;
+
+    z-index: 3;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+    visibility: hidden;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 40px;
+
+    overflow-y: auto;
+
+    transition:
+        opacity .4s ease,
+        visibility .4s ease;
+
+    text-align: center;
+
+    opacity: 0;
+
+    background: #f9f6ef;
+
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* ========================================
+   LOGO HISTORIA
+======================================== */
+
+.historia-hover .historia-logo
+{
+    display: block;
+
+    width: 150px;
+    max-width: 45%;
+
+    margin: 0 auto 0px;
+}
+
+
+/* ========================================
+   TITULAR HISTORIA
+======================================== */
+
+.historia-hover h3
+{
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    color: #efb814;
+}
+
+
+/* ========================================
+   DOS COLUMNAS DE TEXTO
+======================================== */
+
+.historia-texto
+{
+    width: 100%;
+    max-width: 850px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.historia-texto p
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    margin: 0;
+
+    color: #706f6f;
+}
+
+.historia-texto p b{    
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+
+    margin: 0;
+
+    color: #68773C;
+}
+
+
+
+
+
+
+/* ========================================
+   HOVER DESKTOP HISTORIA
+======================================== */
+
+@media (min-width: 769px)
+{
+    .nuestra-card:hover
+    {
+        transform: translateY(-8px);
+    }
+
+    .nuestra-card:hover .historia-portada
+    {
+        transform: scale(.95);
+
+        opacity: 0;
+    }
+
+    .nuestra-card:hover .historia-hover
+    {
+        visibility: visible;
+
+        opacity: 1;
+    }
+}
+
+
+/* ========================================
+   HISTORIA MOBILE
+======================================== */
+
+@media (max-width: 768px)
+{
+    .nuestra-card
+    {
+        min-height: auto;
+    }
+
+    .historia-portada
+    {
+        min-height: 500px;
+
+        padding: 30px 20px;
+    }
+
+    .nuestra-card .historia-portada img
+    {
+        width: 80%;
+    }
+
+
+    /* HISTORIA OCULTA INICIALMENTE */
+
+    .historia-hover
+    {
+        position: relative;
+
+        display: none;
+
+        width: 100%;
+        height: auto;
+
+        min-height: 500px;
+
+        padding: 30px 20px;
+
+        overflow: visible;
+
+        visibility: visible;
+        opacity: 1;
+
+        background: #f9f6ef;
+    }
+
+
+    /* HISTORIA ABIERTA */
+
+    .nuestra-card.mostrar-historia .historia-portada
+    {
+        display: none;
+    }
+
+    .nuestra-card.mostrar-historia .historia-hover
+    {
+        display: flex;
+    }
+
+
+    /* LOGO */
+
+    .historia-hover .historia-logo
+    {
+        width: 150px;
+        max-width: 80%;
+
+        margin: 0 auto 20px;
+    }
+
+
+    /* TITULAR */
+
+    .historia-hover h3
+    {
+        font-size: 22px;
+
+        line-height: 1.25;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* TEXTO */
+
+    .historia-texto
+    {
+        width: 100%;
+    }
+
+    .historia-texto p
+    {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+}
+
+
+/* ========================================
+   CONTACTO
+======================================== */
+
+.contacto
+{
+    background-color: #68773c;
+}
+
+.contacto h2
+{
+    margin: 0;
+
+    color: white;
+}
+
+.contacto i
+{
+    font-size: 30px;
+
+    color: white;
+}
+
+.contacto p
+{
+    color: white;
+}
+
+.contacto a
+{
+    transition: .3s;
+    text-decoration: none;
+
+    color: white;
+}
+
+.contacto a:hover
+{
+    color: #efb814;
+}
+
+.contacto-logo
+{
+    width: 60%;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.pie p
+{
+    font-size: 10px;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   INTERNA PRODUCTOS
+======================================== */
+
+.interna-productos
+{
+    margin-top: 70px;
+}
+
+.subir:hover
+{
+    transition: .3s;
+    transform: translateY(-8px);
+}
+
+
+/* ========================================
+   BORDE + ZOOM IMAGEN
+======================================== */
+
+.borde
+{
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+.borde img
+{
+    display: block;
+
+    width: 100%;
+
+    transition: transform .5s ease;
+}
+
+.borde:hover img
+{
+    transform: scale(1.1);
+}
+
+
+/* ========================================
+   TÍTULO SOBRE IMAGEN
+======================================== */
+
+.titular-fondo
+{
+    background-color: #efb814;
+}
+
+.borde h3
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.frutas
+{
+    background-color: #68773c;
+
+    mix-blend-mode: multiply;
+}
+
+.frutas-griego
+{
+    background-color: #37495d;
+
+    mix-blend-mode: multiply;
+}
+
+.frutas-griego h3
+{
+    font-size: 30px;
+
+    color: white;
+}
+
+.frutas h3
+{
+    font-size: 30px;
+
+    color: white;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 992px)
+{
+    .slide
+    {
+        min-height: 450px;
+    }
+
+    .slide-image
+    {
+        width: 50%;
+        height: 500px;
+    }
+
+    .slide-content
+    {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .arte-2
+    {
+        margin-top: -280px;
+    }
+
+    .nuestra-card .historia-portada img
+    {
+        width: 60%;
+    }
+}
+
+
+/* ========================================
+   MÓVIL
+======================================== */
+
+@media (max-width: 768px)
+{
+    /* NAVBAR */
+
+    .navbar-brand img
+    {
+        width: 130px;
+    }
+
+    .navbar-collapse
+    {
+        padding-top: 20px;
+    }
+
+    .navbar-nav
+    {
+        text-align: right;
+    }
+
+    .navbar-nav .nav-link
+    {
+        padding: 10px 0;
+    }
+
+
+    /* ENLACE ACTIVO */
+
+    .navbar-nav .nav-link.active
+    {
+        font-weight: 600;
+
+        color: #efb814 !important;
+    }
+
+
+    /* SCROLL */
+
+    [id]
+    {
+        scroll-margin-top: 90px;
+    }
+
+
+    /* SLIDER */
+
+    .slide
+    {
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+    .slide-image
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-image img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-content
+    {
+        width: 100%;
+        padding: 35px 25px;
+
+        text-align: center;
+    }
+
+
+    /* TEXTO */
+
+    .espacio-arriba h1
+    {
+        font-size: 38px;
+    }
+
+    .espacio-arriba h2
+    {
+        font-size: 42px;
+    }
+
+    .espacio-arriba p
+    {
+        font-size: 17px;
+    }
+
+    .espacio-arriba .descripcion p
+    {
+        font-size: 16px;
+
+        margin-top: 30px;
+    }
+
+
+    /* CARACTERÍSTICAS */
+
+    .card-body img
+    {
+        width: 30%;
+    }
+
+
+    /* =====================================
+       ARTE MOBILE
+       SE MANTIENE IGUAL
+    ====================================== */
+
+    .arte-2
+    {
+        margin-top: -183px;
+    }
+
+    .arte-card
+    {
+        min-height: 450px;
+    }
+
+
+    .arte-card.mostrar-info
+    {
+        transform: translateY(-8px);
+
+        background-color: white;
+        background-image: none !important;
+    }
+
+
+    .arte-card.mostrar-info .arte-contenido
+    {
+        transform: scale(.95);
+
+        opacity: 0;
+    }
+
+
+    .arte-card.mostrar-info .arte-hover
+    {
+        visibility: visible;
+
+        opacity: 1;
+    }
+
+
+    /* =====================================
+       HISTORIA MOBILE
+    ====================================== */
+
+    .nuestra-card
+    {
+        min-height: 500px;
+    }
+
+    .historia-portada
+    {
+        min-height: 500px;
+    }
+
+    .nuestra-card .historia-portada img
+    {
+        width: 80%;
+    }
+
+    .historia-hover
+    {
+        padding: 30px 20px;
+    }
+
+    .historia-hover .historia-logo
+    {
+        width: 130px;
+        max-width: 60%;
+    }
+
+    .historia-hover h3
+    {
+        font-size: 22px;
+
+        margin-bottom: 20px;
+    }
+
+    .historia-texto p
+    {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* CONTACTO */
+
+    .contacto-logo
+    {
+        width: 50%;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp-float
+    {
+        top: auto;
+        bottom: 20px;
+
+        width: 90px;
+        height: 125px;
+
+        transform: none;
+
+        border-radius: 20px 0 0 20px;
+    }
+
+    .whatsapp-float span
+    {
+        font-size: 10px;
+    }
+
+    .whatsapp-float i
+    {
+        font-size: 42px;
+    }
+}
+
+
+/* ========================================
+   MÓVIL PEQUEÑO
+======================================== */
+
+@media (max-width: 576px)
+{
+    h2
+    {
+        font-size: 35px;
+    }
+
+    .navbar-brand img
+    {
+        width: 120px;
+    }
+
+    .espacio-arriba
+    {
+        padding-top: 70px;
+    }
+
+    .slide-content
+    {
+        padding: 30px 20px;
+    }
+
+    .espacio-arriba h1
+    {
+        font-size: 34px;
+    }
+
+    .espacio-arriba h2
+    {
+        font-size: 38px;
+    }
+
+    .arte
+    {
+        height: 350px;
+    }
+
+    .arte-2
+    {
+        margin-top: -190px;
+    }
+
+    .producto-card,
+    .producto-card-1,
+    .producto-card-2
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    /* =====================================
+       HISTORIA MOBILE PEQUEÑO
+    ====================================== */
+
+    .historia-portada
+    {
+        min-height: 450px;
+
+        padding: 25px 15px;
+    }
+
+    .historia-hover
+    {
+        min-height: 450px;
+
+        padding: 30px 15px;
+    }
+
+    .historia-hover .historia-logo
+    {
+        width: 140px;
+    }
+
+    .historia-hover h3
+    {
+        font-size: 20px;
+    }
+
+    .historia-texto p
+    {
+        font-size: 13px;
+
+        line-height: 1.55;
+    }
+}
